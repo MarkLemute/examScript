@@ -5,7 +5,7 @@ Install the PDF text extractor once if needed:
 
 Example:
     python find_exam_dates.py ^
-        "D:\downloads\TENTATIVE EXAM TIMETABLE 2026-2027.1.pdf" ^
+        "D:\downloads\FINAL EXAM TIMETABLE 2026-2027.1.pdf" ^
         "C:\Users\chuko\OneDrive\Documents\research methods\Report_639276532871416381.pdf"
 """
 
@@ -23,7 +23,7 @@ DATE_PATTERN = re.compile(
     r"\b(?P<weekday>Mon|Tue|Wed|Thu|Fri|Sat|Sun)\s*,?\s*"
     r"(?P<date>\d{1,2}-\d{2}-\d{4})"
 )
-COURSE_PATTERN = re.compile(r"\b[A-Z]{3,5}\d{3}\b")
+COURSE_PATTERN = re.compile(r"\b[A-Z]{3,5}\d{3}[A-Z]?\b")
 TIME_PATTERN = re.compile(
     r"(?P<start>\d{1,2}:\d{2}\s+[AP]M)\s+"
     r"(?P<end>\d{1,2}:\d{2}\s+[AP]M)"

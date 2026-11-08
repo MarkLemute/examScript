@@ -25,7 +25,7 @@ Run the script with the timetable PDF first and the registration PDF second:
 
 ```powershell
 python .\find_exam_dates.py `
-  "D:\downloads\TENTATIVE EXAM TIMETABLE 2026-2027.1.pdf" `
+  "D:\downloads\FINAL EXAM TIMETABLE 2026-2027.1.pdf" `
   "C:\Users\chuko\OneDrive\Documents\research methods\Report_639276532871416381.pdf"
 ```
 
@@ -41,7 +41,7 @@ Systems**:
 
 ```powershell
 python .\find_exam_dates.py `
-  "D:\downloads\TENTATIVE EXAM TIMETABLE 2026-2027.1.pdf" `
+  "D:\downloads\FINAL EXAM TIMETABLE 2026-2027.1.pdf" `
   "C:\Users\chuko\OneDrive\Documents\research methods\Report_639276532871416381.pdf" `
   --course COSC403
 ```
